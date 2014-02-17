@@ -8,15 +8,15 @@ gem 'rails', '4.0.2'
 # Use postgresql for database
 gem 'pg'
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.0'
+
 group :assets do
   # Enable asset pipeline
   gem 'sprockets-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
-  # Use SCSS for stylesheets
-  gem 'sass-rails', '~> 4.0.0'
 
   # Use Uglifier as compressor for JavaScript assets
   gem 'uglifier', '>= 1.3.0'
