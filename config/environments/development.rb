@@ -27,5 +27,7 @@ Venn::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  config.assets.compress = false
+
   config.sass.cache = false
 end
