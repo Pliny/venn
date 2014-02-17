@@ -31,6 +31,11 @@ end
 group :development, :test do
   # RSpec for testing
   gem 'rspec-rails', '~> 3.0.0.beta'
+
+  gem 'capybara'
+
+  gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 # HAML for html
