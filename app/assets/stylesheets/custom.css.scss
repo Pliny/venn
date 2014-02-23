@@ -15,10 +15,37 @@ body {
   height: 100%;
 }
 
+.hidden { display: none; }
+
+input {
+  font-size: 3.58em;
+  text-transform: uppercase;
+  background-color: $color1;
+  color: $color2;
+  border: none;
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 1;
+  outline-width: 0;
+  width: 100%;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
 h1 {
   font-size: 3.58em;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -43,9 +70,32 @@ h2 {
   text-align: center;
   margin: auto;
   overflow: auto;
-  width: 50%;
+  width: 80%;
   height: 140px;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
+.loader {
+  width: 16px;
+  height: 16px;
+  background: image-url('ajax-loader.gif') no-repeat center center
+}
+
+.success {
+  width: 16px;
+  height: 16px;
+  background: image-url('checkbox-ok.png') no-repeat center center
+}
+
+.status {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.fail {
+  width: 16px;
+  height: 16px;
+  background: image-url('checkbox-fail.png') no-repeat center center
+}

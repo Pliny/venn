@@ -1,6 +1,9 @@
 Venn::Application.routes.draw do
 
-  root 'teaser#index'
+  root 'teasers#index'
+
+  resource :teaser, only: :create
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

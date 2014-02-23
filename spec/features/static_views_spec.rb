@@ -9,5 +9,8 @@ describe "Static Views" do
     before { visit root_path }
 
     it { should have_selector("#content") }
+    it { should have_selector(".title1") }
+    it { should have_selector(".title2") }
+    it { should have_selector("input") }
   end
 end
