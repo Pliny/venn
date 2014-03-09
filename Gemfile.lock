@@ -44,10 +44,10 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.0.2)
-    factory_girl (4.3.0)
+    factory_girl (4.4.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.3.0)
-      factory_girl (~> 4.3.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
     haml (4.0.5)
       tilt
@@ -95,7 +95,7 @@ GEM
     rake (10.1.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    rspec-collection_matchers (0.0.2)
+    rspec-collection_matchers (0.0.3)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta1)
     rspec-expectations (3.0.0.beta1)
@@ -155,14 +155,14 @@ PLATFORMS
 DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
-  factory_girl_rails (= 4.3.0)
+  factory_girl_rails (~> 4.4.1)
   haml
   jbuilder (~> 1.2)
   jquery-rails
   pg
   rails (= 4.0.2)
   rails_12factor
-  rspec-collection_matchers (= 0.0.2)
+  rspec-collection_matchers (~> 0.0.3)
   rspec-rails (~> 3.0.0.beta)
   sass-rails (~> 4.0.0)
   sdoc

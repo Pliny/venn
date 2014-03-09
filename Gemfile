@@ -33,8 +33,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 
   # DSD: why do I need this? shouldn't rspec-rails call this?
-  # DSD: Update when I have internet!!
-  gem 'rspec-collection_matchers', '0.0.2'
+  gem 'rspec-collection_matchers', '~> 0.0.3'
 
   gem 'capybara'
 
@@ -42,7 +41,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
 
   # DSD: Update when I have internet!!
-  gem 'factory_girl_rails', '4.3.0'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 # HAML for html
