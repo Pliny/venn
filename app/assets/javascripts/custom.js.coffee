@@ -32,13 +32,28 @@ $(document).on('ajax:error', 'input', () ->
   , 500)
 )
 
+validateEmail = (email) ->
+    re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    re.test(email)
+
 $(document).on('keyup', 'input', (e) ->
-  if e.keyCode is 50
-    $('.title3').toggleClass('invisible')
+  if validateEmail($('input').val())
+    $('.title3').addClass('invisible')
     setTimeout(() ->
-      $('.title3, .title4').toggleClass('hidden')
+      $('.title3').addClass('hidden')
+      $('.title4').removeClass('hidden')
       setTimeout(() ->
-        $('.title4').toggleClass('invisible')
+        $('.title4').removeClass('invisible')
+      , 0)
+    , 500)
+  else
+    $('.loader, .success, .fail').addClass('hidden')
+    $('.title4').addClass('invisible')
+    setTimeout(() ->
+      $('.title4').addClass('hidden')
+      $('.title3').removeClass('hidden')
+      setTimeout(() ->
+        $('.title3').removeClass('invisible')
       , 0)
     , 500)
 )
