@@ -3,9 +3,9 @@ $(document).on('click', '.title1', () ->
 )
 
 transitionCallback = () ->
-  $('.title2, .title1').toggleClass('hidden')
+  $('.title3, .title2, .title1').toggleClass('hidden')
   setTimeout(() ->
-    $('.title2').toggleClass('invisible')
+    $('.title2, .title3').toggleClass('invisible')
     $('input').focus()
   , 0)
 
@@ -30,5 +30,16 @@ $(document).on('ajax:error', 'input', () ->
     $('.loader, .fail').toggleClass('hidden')
     $('.fail').toggleClass('invisible')
   , 500)
+)
+
+$(document).on('keyup', 'input', (e) ->
+  if e.keyCode is 50
+    $('.title3').toggleClass('invisible')
+    setTimeout(() ->
+      $('.title3, .title4').toggleClass('hidden')
+      setTimeout(() ->
+        $('.title4').toggleClass('invisible')
+      , 0)
+    , 500)
 )
 
