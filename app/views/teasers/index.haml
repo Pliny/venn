@@ -1,15 +1,15 @@
-.title1.fade
+.title1.fade.invisible
   %h1="venn"
-.title2.hidden.fade.invisible
+.title2.fade.hidden.invisible
   = email_field_tag :email, nil, autocomplete: :off, :data => { remote: true, method: :post, url: teaser_path }
 .line1
-%h2.title1.fade
+%h2.title1.fade.invisible
   ="what you can do does not fit into a job title"
-%h2.title3.hidden.fade.invisible
+%h2.title3.fade.hidden.invisible
   ="leave your e-mail to get notified"
-%h2.title4.hidden.fade.invisible
+%h2.title4.fade.hidden.invisible
   ="hit enter to submit"
   .status
-    .loader.fade.invisible.hidden
-    .success.fade.invisible.hidden
-    .fail.fade.invisible.hidden
+    .loader.fade-fast.invisible.hidden
+    .success.fade-fast.invisible.hidden
+    .fail.fade-fast.invisible.hidden
