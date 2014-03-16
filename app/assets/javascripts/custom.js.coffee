@@ -31,7 +31,7 @@ $(document).on('ready', () ->
 #   $(this).subState = ss
 # )
 
-$(document).on('click', '.title1', () ->
+$(document).on('touchstart click', '.title1', () ->
   ss = new SubState ".title1", ".title2, .title3"
   ss.preTransition()
   this['subState'] = ss
